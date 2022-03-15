@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
-import Profile from '../../assets/projectImage/budgetApp.jpg'
 
 function Portfolio(props) {
 
@@ -26,7 +25,7 @@ function Portfolio(props) {
         },
 
         {
-            name: 'Social Network Api',
+            name: 'Social Ne',
             githubLink: '',
             deployedApplication: '',
             description: 'A NoSQL Social Network API'
@@ -34,7 +33,7 @@ function Portfolio(props) {
         },
 
         {
-            name: 'Task',
+            name: 'taskManager',
             githubLink: '',
             deployedApplication: '',
             description: 'PWA'
@@ -49,15 +48,27 @@ function Portfolio(props) {
     }
 
     return (
-        <div id="wrapper">
-        <div className="m-2" id="profile-picture">
-            <img 
-            src = {Profile}
-            alt="profile picture"
-            >
-            </img>
-       </div>
-       </div>
+            <section id="project">
+                {isModalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
+                 <h1>Projects</h1>
+                 <div id="wrapper">
+
+       
+            {projects.map((project, index) =>(
+
+                <div key={index}>
+                    <h4>{project.name}</h4>
+                    <img 
+                    src={(`{../../assets/projectImage}${project.img}`)}
+                    alt={project.description}
+                    className="img-thumbnail"
+                    onClick={() => toggleModal(project,index)}
+                    key={project.name}
+                    />
+                </div>
+            ))}
+                </div>
+                 </section>
 
     )
 }
