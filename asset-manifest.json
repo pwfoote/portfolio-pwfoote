@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio-pwfoote/static/css/main.9178c5f0.css",
-    "main.js": "/portfolio-pwfoote/static/js/main.388dad4e.js",
+    "main.css": "/portfolio-pwfoote/static/css/main.d9f976c4.css",
+    "main.js": "/portfolio-pwfoote/static/js/main.4397c295.js",
     "static/js/787.ee96c3b3.chunk.js": "/portfolio-pwfoote/static/js/787.ee96c3b3.chunk.js",
     "static/media/cover-image.jpg": "/portfolio-pwfoote/static/media/cover-image.a21353c346f644e8e297.jpg",
+    "static/media/fanBook.jpg": "/portfolio-pwfoote/static/media/fanBook.d087c1cf1946ad22f300.jpg",
+    "static/media/testPic.jpg": "/portfolio-pwfoote/static/media/testPic.943044a74b8e619632e4.jpg",
+    "static/media/budgetApp.jpg": "/portfolio-pwfoote/static/media/budgetApp.6ee080bbf0cf4a4b09cf.jpg",
+    "static/media/taskManager.jpg": "/portfolio-pwfoote/static/media/taskManager.6da77eefa40e9a6da803.jpg",
     "index.html": "/portfolio-pwfoote/index.html",
-    "main.9178c5f0.css.map": "/portfolio-pwfoote/static/css/main.9178c5f0.css.map",
-    "main.388dad4e.js.map": "/portfolio-pwfoote/static/js/main.388dad4e.js.map",
+    "main.d9f976c4.css.map": "/portfolio-pwfoote/static/css/main.d9f976c4.css.map",
+    "main.4397c295.js.map": "/portfolio-pwfoote/static/js/main.4397c295.js.map",
     "787.ee96c3b3.chunk.js.map": "/portfolio-pwfoote/static/js/787.ee96c3b3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9178c5f0.css",
-    "static/js/main.388dad4e.js"
+    "static/css/main.d9f976c4.css",
+    "static/js/main.4397c295.js"
   ]
 }
