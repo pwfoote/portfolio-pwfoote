@@ -1,15 +1,15 @@
 import React from 'react';
 import profileImage from './img/cover-image.jpg';
+import Header from './components/Header'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
-      <h2>preston foote</h2>
-      <h3>this is working</h3>
-      <h4>hope this is working</h4>
-      <h4>yuhp</h4>
+      <Header></Header>
+      <main>
+
+      </main>
       <img  class="cover-img" src={profileImage} alt="profile-image" />
     </div>
   );
