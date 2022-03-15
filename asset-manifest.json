@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio-pwfoote/static/css/main.9178c5f0.css",
+    "main.js": "/portfolio-pwfoote/static/js/main.fe4eb988.js",
+    "static/js/787.ee96c3b3.chunk.js": "/portfolio-pwfoote/static/js/787.ee96c3b3.chunk.js",
+    "static/media/cover-image.jpg": "/portfolio-pwfoote/static/media/cover-image.a21353c346f644e8e297.jpg",
+    "index.html": "/portfolio-pwfoote/index.html",
+    "main.9178c5f0.css.map": "/portfolio-pwfoote/static/css/main.9178c5f0.css.map",
+    "main.fe4eb988.js.map": "/portfolio-pwfoote/static/js/main.fe4eb988.js.map",
+    "787.ee96c3b3.chunk.js.map": "/portfolio-pwfoote/static/js/787.ee96c3b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9178c5f0.css",
+    "static/js/main.fe4eb988.js"
+  ]
+}
