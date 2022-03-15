@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 
 function Nav () {
 
@@ -9,12 +9,8 @@ function Nav () {
                     <a href="#about"> About </a>
                 </li>
                 <li>
-                    <a href="#project"> Project </a>
+                    <a href="#project"> Projects </a>
                 </li>
-                <li>
-                    <a href="#contact"> Contact </a>
-                </li>
-                
                 <li>
                     <a href="#resume"> Resume </a>
                 </li>

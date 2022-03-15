@@ -1,68 +1,72 @@
 import React, { useState } from 'react';
-
+import budgetApp from '../../assets/projectImage/budgetApp.jpg'
+import fanBook from '../../assets/projectImage/fanBook.jpg'
+import mongoDB from '../../assets/projectImage/mongoDB.jpg'
+import profileGen from '../../assets/projectImage/profileGen.gif'
+import taskManager from '../../assets/projectImage/taskManager.jpg'
 function Portfolio(props) {
-
-    const [projects] = useState([
-        {
-            name: 'budgetApp',
-            githubLink: '',
-            deployedApplication: '',
-            description: 'PWA'
-
-        },
-
-        {
-            name: 'fanBook',
-            githubLink: '',
-            deployedApplication: '',
-            description: 'An App for Music Fans'
-
-        },
-
-        {
-            name: 'mongoDB',
-            githubLink: '',
-            deployedApplication: '',
-            description: 'A NoSQL Social Network API'
-
-        },
-
-        {
-            name: 'profileGen',
-            githubLink: '',
-            deployedApplication: '',
-            description: 'A Node.js Application'
-
-        },
-
-        {
-            name: 'taskManager',
-            githubLink: '',
-            deployedApplication: '',
-            description: 'PWA'
-
-        },
-       
-    ])
 
 
     return (
-            <section id="project">
+        <div id="wrapper">
+        <div className="m-2" id="profile-picture">
+            <h3>Budget Tracker</h3>
+            <img 
+            src = {budgetApp}
+            alt="Budget Managing App"
+            >
+            </img>
+            <a href="https://thawing-ravine-75047.herokuapp.com/" target="_blank"><h3>Deployed</h3></a>
+            <a href="https://github.com/pwfoote/saki-banner" target="_blank"><h3>Github</h3></a>
+       </div>
 
+       <div className="m-2" id="profile-picture">
+           <h3>FanBook.com</h3>
+            <img 
+            src = {fanBook}
+            alt="fanbook.com"
+            >
+            </img>
+            <a href="https://pwfoote.github.io/FanBook.com/" target="_blank"><h3>Deployed</h3></a>
+            <a href="https://github.com/pwfoote/FanBook.com" target="_blank"><h3>Github</h3></a>
+       </div>
 
-        <h2>Projects</h2>
-            {projects.map((project, index) =>(
+       <div className="m-2" id="profile-picture">
+           <h3>Social Network Api</h3>
+            <img 
+            src = {mongoDB}
+            alt="fanbook.com"
+            >
+            </img>
+            <a href="https://drive.google.com/file/d/1EYgQ3JcmNZihMGZvcfIvlEaaMpXwifwp/view" target="_blank"><h3>Demo</h3></a>
+            <a href="https://github.com/pwfoote/tender-foote" target="_blank"><h3>Github</h3></a>
+       </div>
 
-                <div key={index}>
-                    <h4>{project.name}</h4>
-                    <img 
-                    src={(`{../../assets/}${project.name}`)}
-                    alt={project.description}
-                    />
-                </div>
-            ))}
+       <div className="m-2" id="profile-picture">
+           <h3>Team Profile Generator</h3>
+            <img 
+            src = {profileGen}
+            alt="Team Profile Generator"
+            >
+            </img>
+            <a href="https://drive.google.com/file/d/135gPxdKob-fbagGz3DBwLtpvOg3IG8u0/view" target="_blank"><h3>Demo</h3></a>
+            <a href="https://github.com/pwfoote/Team-Profile-Generator" target="_blank"><h3>Github</h3></a>
+       </div>
 
-                 </section>
+       <div className="m-2" id="profile-picture">
+           <h3>Daily Task Manager</h3>
+            <img 
+            src = {taskManager}
+            alt="Task Manager App"
+            >
+            </img>
+            <a href="https://pwfoote.github.io/daily-work-task-app/" target="_blank"><h3>Deployed</h3></a>
+            <a href="https://github.com/pwfoote/daily-work-task-app" target="_blank"><h3>Github</h3></a>
+       </div>
+
+       </div>
+       
+       
 
     )
 }

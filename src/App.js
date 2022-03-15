@@ -1,5 +1,5 @@
-import React from 'react';
 
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
@@ -15,8 +15,9 @@ function App() {
       <main>
       <About></About>
       <Portfolio></Portfolio>
-      <ContactForm></ContactForm>
       <Resume></Resume>
+      <ContactForm></ContactForm>
+      
         
       </main>
      <Footer></Footer>

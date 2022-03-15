@@ -4,8 +4,18 @@ function Resume() {
 
     return (
         <section id="resume">
-            <h2>Resume</h2>
-            <a href="" download> Click here to download my resume</a>
+            <div id ="wrapper"className="my-4">
+              <div>
+            <h1>Resume</h1>
+            <span className="m-3">
+            <h3><a href="https://docs.google.com/document/d/1FAh-U27P18IM2MyiUUZfH7C1tKHUXt1t/edit" target="_blank"> 
+            You Can View My Resume Here</a></h3>
+            </span>
+            </div>
+
+         </div>
+         <div id ="wrapper" className="my-4">
+              <div>
 
             <h3> Front-end Skills</h3>
             <ul>
@@ -17,7 +27,12 @@ function Resume() {
                 <li>React</li>
                 <li>Bootstrap</li>
             </ul>
+            </div>
+         </div>
 
+
+         <div id ="wrapper" className="my-4">
+              <div>
             <h3> Back-end Skills</h3>
             <ul>
                 <li>APIs</li>
@@ -27,6 +42,8 @@ function Resume() {
                 <li>MongoDB, Mongoose</li>
                 
             </ul>
+            </div>
+         </div>
         </section>
     )
 }

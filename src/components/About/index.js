@@ -20,7 +20,12 @@ function About() {
               </div>
 
         <p>
-            BIO TEXT
+           Hello There! My name is Preston and I am a current student for Michigan State University Coding Bootcamp. I decided to take the dive into Full Stack Web Development so i could combine my interest of Design and Technology. While this class has been challenging, thanks to support from friends, family and classmates, I have finally made it to the end!
+        
+            Through out this course I have learned primary foundational skills to continue as a Full Stack Developer, but still have a lot to learn! 
+
+            Transitioning from the Service Industry, I am bringing the skills that helped me master TeamWork, Problem Solving and Customer Service to perfect in the Tech Industry.
+        
         </p>
 
     </div>

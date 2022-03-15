@@ -4,11 +4,11 @@ function Header() {
 
   return (
     <header>
-        <h2> 
-        <a
-         href="/">Preston Foote
-        </a>
-         </h2>
+        <h1> 
+        
+       Preston Foote
+    
+         </h1>
         <Nav />
     </header>
   );
