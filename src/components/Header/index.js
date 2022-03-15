@@ -6,7 +6,7 @@ function Header() {
     <header>
         <h2> 
         <a
-         href="/">Isaac Andrade
+         href="/">Preston Foote
         </a>
          </h2>
         <nav>
