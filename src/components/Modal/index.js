@@ -1,4 +1,6 @@
 import React from 'react';
+import { AiFillGithub } from 'react-icons/ai'
+import { DiHeroku } from 'react-icons/di'
 
 function Modal({onClose, currentProject}) {
     const {name,githubLink, deployedApplication, description, index } = currentProject
@@ -7,15 +9,15 @@ function Modal({onClose, currentProject}) {
         <div className="modalBackdrop">
         <div className="modalContainer">
           <h3 className="modalTitle">{name}</h3>
-          <img src ={require(`../../assets/projectImage/${index}.jpg`)} 
-          alt="current project" width="80%"/>
-          <div>
+          <img src ={require(`../../assets/projectImage/${index}.png`)} 
+          alt="current project" width="100%"/>
+          <div className="media">
               <ul>
-              <li><a href={githubLink} >Github link</a></li>
-              <li><a href={deployedApplication} >Deployed Application </a></li>
+              <li><a href={githubLink} target="_blank"><AiFillGithub /></a></li>
+              <li><a href={deployedApplication} target="_blank" ><DiHeroku/> </a></li>
               </ul>
           </div>
-          <p  className="modalDescription">
+          <p className="modalDescription">
             {description}
           </p>
           <button onClick={onClose} type="button">
@@ -23,8 +25,7 @@ function Modal({onClose, currentProject}) {
           </button>
         </div>
       </div>
-
+      
     );
   }
-
-  export default Modal; 
+    export default Modal;

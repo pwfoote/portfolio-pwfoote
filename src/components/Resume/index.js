@@ -22,10 +22,8 @@ function Resume() {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <li>JQuery</li>
-                <li>Responsive design</li>
-                <li>React</li>
                 <li>Bootstrap</li>
+                <li>React</li>
             </ul>
             </div>
          </div>
@@ -38,7 +36,6 @@ function Resume() {
                 <li>APIs</li>
                 <li>Node</li>
                 <li>Express</li>
-                <li>MySQL, Sequelize</li>
                 <li>MongoDB, Mongoose</li>
                 
             </ul>

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Modal from '../Modal';
+
 
 function Portfolio(props) {
 
 
-    const [currentProject, setCurrentProject] = useState();
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [githubLink] = useState();
+
 
     const [projects] = useState([
         {
@@ -18,16 +18,16 @@ function Portfolio(props) {
 
         {
             name: 'FanBook',
-            githubLink: '',
+            githubLink: 'https://github.com/pwfoote/FanBook.com',
             deployedApplication: '',
             description: 'An App for Music Fans'
 
         },
 
         {
-            name: 'Social Ne',
-            githubLink: '',
-            deployedApplication: '',
+            name: 'Social Network API',
+            githubLink: 'https://github.com/pwfoote/tender-foote',
+            deployedApplication: 'https://drive.google.com/file/d/1EYgQ3JcmNZihMGZvcfIvlEaaMpXwifwp/view',
             description: 'A NoSQL Social Network API'
 
         },
@@ -42,14 +42,11 @@ function Portfolio(props) {
        
     ])
 
-    const toggleModal = (project, index) => {
-           setCurrentProject({ ...project, index: index})
-           setIsModalOpen(!isModalOpen);
-    }
+
 
     return (
             <section id="project">
-                {isModalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
+                
                  <h1>Projects</h1>
                  <div id="wrapper">
 
@@ -62,9 +59,10 @@ function Portfolio(props) {
                     src={(`{../../assets/projectImage}${project.img}`)}
                     alt={project.description}
                     className="img-thumbnail"
-                    onClick={() => toggleModal(project,index)}
                     key={project.name}
+                    href={githubLink} 
                     />
+                     
                 </div>
             ))}
                 </div>
